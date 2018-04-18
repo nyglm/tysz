@@ -1,0 +1,206 @@
+ html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+/*音乐部分*/
+#music{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 3%;
+    top: 2%;
+    z-index: 9;
+}
+#music .imgcbg{
+    width: 60px;
+    height: 60px;
+}
+#music .imgImg{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    animation: music 1s infinite linear;
+}
+@keyframes music{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{transform: rotate(360deg)}
+}
+/*第一屏*/
+.swiper-slide.one{
+	background: url(../img/bj.jpg) no-repeat;
+	background-size: 100% 100%;
+ }
+ .swiper-slide.one img:nth-child(1){
+     position: absolute;
+     top: 15%;
+     left: 38%;
+     width: 60px;
+     height: 60px;
+ }
+ .swiper-slide.one .top .qing{
+     position: absolute;
+     top: 28%;
+     left:38%;
+     width:65px;
+     height: 65px;
+ }
+ .swiper-slide.one .top .han{
+     position: absolute;
+     top: 40%;
+     left:38%;
+     width:65px;
+     height: 65px;
+ }
+ .swiper-slide.one .center .hotel{
+     position: absolute;
+     top: 55%;
+     width: 90%;
+     left: 5%;
+ }
+ .swiper-slide.one .center .kai{
+     position: absolute;
+     top: 70%;
+     width: 60%;
+     left: 20%;
+ }
+ /*第二屏*/
+ .swiper-slide.two{
+     background: url("../img/bj.jpg") no-repeat;
+     background-size: 100% 100%;
+ }
+ .swiper-slide.two .top{
+     display: block;
+     position:absolute;
+     top: 15%;
+     color: red;
+     font-size: 20px;
+ }
+
+ .swiper-slide.two .center{
+     width: 90%;
+     height: 65%;
+     margin: auto;
+     position: absolute;
+     top: 25%;
+ }
+ .swiper-slide.two .center .text p{
+     text-align: left;
+     text-indent: 2em;
+     font-size: 13px;
+     color: #fff;
+ }
+ /*第三屏*/
+ .swiper-slide.three{
+     background: url("../img/bj.jpg") no-repeat;
+     background-size: 100% 100%;
+ }
+ .swiper-slide.three .top img:nth-child(1){
+       position: absolute;
+       top: 10%;
+       left: 10%;
+   }
+ .swiper-slide.three .top img:nth-child(2){
+     position: absolute;
+     top: 30%;
+     left: 30%;
+ }
+ .swiper-slide.three .top img:nth-child(3){
+     position: absolute;
+     top: 50%;
+     left: 10%;
+ }
+ .swiper-slide.three .top img:nth-child(4){
+     position: absolute;
+     top: 70%;
+     left: 30%;
+ }
+ /*第四屏*/
+ .swiper-slide.four{
+     background: url("../img/bj.jpg") no-repeat;
+     background-size: 100% 100%;
+ }
+ .swiper-slide.four .top{
+     display: block;
+     position:absolute;
+     top: 15%;
+     color: red;
+     font-size: 20px;
+ }
+ .swiper-slide.four .center{
+     color: #fff;
+ }
+ /*第五屏*/
+ .swiper-slide.five{
+     background: url("../img/bj.jpg") no-repeat;
+     background-size: 100% 100%;
+ }
+ .swiper-slide.five .top{
+     position: absolute;
+     top: 15%;
+     color: red;
+     font-size: 20px;
+ }
+ .swiper-slide.five .top p{
+     font-size: 15px;
+     color: #fff;
+ }
+ .swiper-slide.five .bottom{
+      margin-top: 40%;
+ }
+ /*第六屏*/
+ .swiper-slide.six{
+     background: url("../img/bj.jpg") no-repeat;
+     background-size: 100% 100%;
+ }
+ .swiper-slide.six .top{
+     position: absolute;
+     top: 15%;
+     color: red;
+     font-size: 20px;
+ }
+ .swiper-slide.six .center{
+     margin-top: -10%;
+ }
+ .swiper-slide.six .center p input{
+     width: 260px;
+     height: 30px;
+     border: 1px solid #fff;
+ }
+ .swiper-slide.six .center p input[type="submit"]{
+     background: burlywood;
+     color: #fff;
+     margin-top: 10%;
+ }
